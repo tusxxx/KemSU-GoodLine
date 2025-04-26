@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package similarity;
+
+option go_package = "path/to/your/package;similarity";
+
+service SimilarityService {
+    rpc CalculateSimilarity(SimilarityRequest) returns (SimilarityResponse);
+}
+
+message SimilarityRequest {
+    string image_base64_1 = 1;
+    string image_base64_2 = 2;
+}
+
+message SimilarityResponse {
+    float similarity = 1;
+}
