@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package similarity;
 
-option go_package = "https://github.com/tusxxx/KemSU-GoodLine;main";
+option go_package = "https://github.com/tusxxx/KemSU-GoodLine;similarity";
 
 service SimilarityService {
     rpc CalculateSimilarity(SimilarityRequest) returns (SimilarityResponse);
